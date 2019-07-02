@@ -12,6 +12,7 @@
 		538FE94822CBB490005A3836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538FE94722CBB490005A3836 /* Assets.xcassets */; };
 		538FE94B22CBB490005A3836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 538FE94922CBB490005A3836 /* LaunchScreen.storyboard */; };
 		538FE94E22CBB490005A3836 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 538FE94D22CBB490005A3836 /* main.m */; };
+		538FE95722CBB7FC005A3836 /* KSPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 538FE95622CBB7FC005A3836 /* KSPokemon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		538FE94A22CBB490005A3836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		538FE94C22CBB490005A3836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		538FE94D22CBB490005A3836 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		538FE95522CBB7FC005A3836 /* KSPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSPokemon.h; sourceTree = "<group>"; };
+		538FE95622CBB7FC005A3836 /* KSPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSPokemon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				538FE94422CBB48F005A3836 /* Main.storyboard */,
+				538FE95822CBB806005A3836 /* Model */,
 				538FE95422CBB49C005A3836 /* Resources */,
 			);
 			path = PokedexObjC;
@@ -72,6 +76,15 @@
 				538FE94D22CBB490005A3836 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		538FE95822CBB806005A3836 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				538FE95522CBB7FC005A3836 /* KSPokemon.h */,
+				538FE95622CBB7FC005A3836 /* KSPokemon.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				538FE95722CBB7FC005A3836 /* KSPokemon.m in Sources */,
 				538FE94E22CBB490005A3836 /* main.m in Sources */,
 				538FE94022CBB48F005A3836 /* AppDelegate.m in Sources */,
 			);
@@ -288,7 +302,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PokedexObjC/Info.plist;
+				DEVELOPMENT_TEAM = 8MJ3MC3A9A;
+				INFOPLIST_FILE = "$(SRCROOT)/PokedexObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +319,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PokedexObjC/Info.plist;
+				DEVELOPMENT_TEAM = 8MJ3MC3A9A;
+				INFOPLIST_FILE = "$(SRCROOT)/PokedexObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
